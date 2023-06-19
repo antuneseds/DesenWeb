@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+:root{
+    --cor-rosa: #BF8F9C;
+    --cor-amarelo-claro: #D9923B;
+    --cor-caramelo: #A65712;
+    --cor-rosa-claro: #D99F7E;
+    --cor-marrom: #592525;
+
+}
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Geologica:wght@300&family=Playfair+Display:wght@600&display=swap');

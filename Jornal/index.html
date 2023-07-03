@@ -1,13 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/fashion-society.png" type="image/x-icon">
+    <link rel="stylesheet" href="jornal.css">
     <title>Fashion Society </title>
+    <style>
+        header>#primeira {
+            border-bottom: 1px solid black;
+
+            /*Pode tirar*/
+            height: 120px;
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+        }
+
+        #primeira>div {
+            
+            border: 1px solid red;
+            height: 120px;
+        }
+        #primeira img{
+            height: 120px;
+        }
+
+
+        header,
+        nav {
+            margin: 10px 100px;
+        }
+        #banner{
+            background-image: url('imagens/fashion-society.png');
+            background-size: cover;
+            height: 200px;
+        }
+        main{
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+        #logo{
+            display: grid;
+            grid-template-columns: auto auto;
+            
+            align-items: center;
+        }
+        #logo h1{
+            margin-left: 20px;
+        }
+
+    </style>
 </head>
+
 <body>
-    
+    <header>
+        <div id="primeira">
+            <div id="logo">
+                <img src="imagens/fashion-society.png" alt="">
+                <h1>FASHION SOCIERY</h1>
+            </div>
+            <div>SEGUNDA-FEIRA , 3 DE JUL</div>
+        </div>
+    </header>
+    <nav>
+        <a href=""> Link </a>
+        <a href=""> Link </a>
+        <a href=""> Link </a>
+        <a href=""> Link </a>
+        <a href=""> Link </a>
+        <a href=""> Link </a>
+    </nav>
+    <div id="banner">
+
+    </div>
+
+    <main>
+        <section>A</section>
+        <section>B</section>
+        <section>C</section>
+    </main>
+
 </body>
+
 </html>

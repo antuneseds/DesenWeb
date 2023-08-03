@@ -21,7 +21,7 @@
 
 #primeira{
   font-family: 'Bebas Neue', sans-serif;
-  background-color: var(--cor-rosa-claro);
+  background-color: var(--cor-rosa);
   display: grid;
   grid-template-columns: 20% 10%;
   justify-content: space-between;
@@ -48,7 +48,7 @@
 }
 
 #menu{
-  padding: 35px;
+  padding: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -56,6 +56,7 @@
 .item-menu{
   justify-self: center;
   color: black;
+  font-size: 12px;
 
 }
 .item-menu:hover{
@@ -64,8 +65,9 @@
 
 #banner{
   background-image: url(imagens/banner.jpg);
-  height: 1300px;
-  min-width: 1vw;
+  height: 50vh;
+  width: 100%;
+  object-fit: contain;
 }
 
 

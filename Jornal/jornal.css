@@ -93,23 +93,6 @@
   object-fit: cover;
 }
 
-/*@media (min-width: 768px) and (max-width: 1018px)
-.estilo-noticias [class*="estilo-noticias"] {
-    padding-right: 14px;
-    padding-left: 14px;
-}*/ 
-.estilo-noticias [class*="estilo-noticias"] {
-    display: block;
-    min-height: 1px;
-    float: left;
-    padding-right: 24px;
-    padding-left: 24px;
-    position: relative;
-    padding-right: 14px;
-    padding-left: 14px;
-    min-width: 768px;
-    max-width: 1018px;
-}
 
 footer {
   position: fixed;
@@ -125,8 +108,8 @@ footer {
   }
 }
 
-.footer-distributed {
-  background-color: #2d2a30;
+.rodape {
+  background-color: black;
   box-sizing: border-box;
   width: 100%;
   text-align: left;
@@ -135,43 +118,43 @@ footer {
   margin-top: 80px;
 }
 
-.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+.rodape .rodape-esquerda, .rodape-centro, .rodape-direita {
   display: inline-block;
   vertical-align: top;
 }
 
 /* Footer left */
 
-.footer-distributed .footer-left {
+.rodape .rodape-esquerda {
   width: 30%;
 }
 
-.footer-distributed h3 {
+.rodape h3 {
   color: #ffffff;
   font: normal 36px 'Cookie', cursive;
   margin: 0;
 }
 
 
-.footer-distributed h3 span {
-  color: #e0ac1c;
+.rodape h3 span {
+  color: #ffffff;
 }
 
 /* Footer links */
 
-.footer-distributed .footer-links {
+.rodape .rodape-links {
   color: #ffffff;
   margin: 20px 0 12px;
 }
 
-.footer-distributed .footer-links a {
+.rodape .rodape-links a {
   display: inline-block;
   line-height: 1.8;
   text-decoration: none;
   color: inherit;
 }
 
-.footer-distributed .footer-company-name {
+.rodape .rodape-empresa {
   color: #8f9296;
   font-size: 14px;
   font-weight: normal;
@@ -180,11 +163,11 @@ footer {
 
 /* Footer Center */
 
-.footer-distributed .footer-center {
+.rodape .rodape-centro {
   width: 35%;
 }
 
-.footer-distributed .footer-center i {
+.rodape .rodape-centro i {
   background-color: #33383b;
   color: #ffffff;
   font-size: 25px;
@@ -197,26 +180,26 @@ footer {
   vertical-align: middle;
 }
 
-.footer-distributed .footer-center i.fa-envelope {
+.rodape .rodape-centro i.fa-email {
   font-size: 17px;
   line-height: 38px;
 }
 
-.footer-distributed .footer-center p {
+.rodape .rodape-centro p {
   display: inline-block;
   color: #ffffff;
   vertical-align: middle;
   margin: 0;
 }
 
-.footer-distributed .footer-center p span {
+.rodape .rodape-centro p span {
   display: block;
   font-weight: normal;
   font-size: 14px;
   line-height: 2;
 }
 
-.footer-distributed .footer-center p a {
+.rodape .rodape-centro p a {
   color: #e0ac1c;
   text-decoration: none;
   ;
@@ -224,11 +207,11 @@ footer {
 
 /* Footer Right */
 
-.footer-distributed .footer-right {
+.rodape .rodape-direita {
   width: 30%;
 }
 
-.footer-distributed .footer-company-about {
+.rodape .rodape-sobre-empresa {
   line-height: 20px;
   color: #92999f;
   font-size: 13px;
@@ -236,7 +219,7 @@ footer {
   margin: 0;
 }
 
-.footer-distributed .footer-company-about span {
+.rodape .rodape-sobre-empresa span {
   display: block;
   color: #ffffff;
   font-size: 18px;
@@ -244,15 +227,14 @@ footer {
   margin-bottom: 20px;
 }
 
-.footer-distributed .footer-icons {
+.rodape .rodape-icones {
   margin-top: 25px;
 }
 
-.footer-distributed .footer-icons a {
+.rodape .rodape-icones a {
   display: inline-block;
   width: 35px;
   height: 35px;
-  cursor: pointer;
   background-color: #33383b;
   border-radius: 2px;
   font-size: 20px;
@@ -263,22 +245,32 @@ footer {
   margin-bottom: 5px;
 }
 
-.footer-distributed .footer-icons a:hover {
+.rodape .rodape-icones a:hover {
   background-color: #3F71EA;
 }
 
-.footer-links a:hover {
+.rodape-links a:hover {
   color: #3F71EA;
 }
 
 @media (max-width: 880px) {
-  .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+  .rodape .rodape-esquerda, .rodape-centro, .rodape-direita {
       display: block;
       width: 100%;
       margin-bottom: 40px;
       text-align: center;
   }
-  .footer-distributed .footer-center i {
+  .rodape .rodape-centro i {
       margin-left: 0;
   }
 }       
+
+.video-make {
+  margin: auto;
+  display: block;
+  padding: 200px;
+  background-color: #2d2a30;
+  height: 150px;
+  margin-bottom: 8%;
+}
+

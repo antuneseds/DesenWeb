@@ -9,6 +9,9 @@
   --cor-caramelo: #A65712;
   --cor-rosa-claro: #D99F7E;
   --cor-marrom: #592525;
+  --cor-preto: #000000;
+  --cor-branco: #FFFFFF;
+  --cor-cinza: #8C8C8C;
   --fonte-bebas: 'Bebas Neue', sans-serif;
   --fonte-playfair: 'Playfair Display', serif;
   --fonte-geologica: 'Geologica', sans-serif;
@@ -56,7 +59,7 @@
 
 .item-menu {
   justify-self: center;
-  color: black;
+  color: var(--cor-preto);
   font-size: 12px;
 
 }
@@ -79,6 +82,7 @@
   max-width: 90%;
   margin: auto;
   row-gap: 5%;
+  margin-bottom: 300px;
 }
 
 .noticia {
@@ -93,11 +97,11 @@
   object-fit: cover;
 }
 
-
-footer {
-  position: fixed;
-  bottom: 0;
+.noticia-titulo {
+  text-decoration: none;
+  color: var(--cor-preto);
 }
+
 
 @media (max-height:800px) {
   footer {
@@ -109,7 +113,7 @@ footer {
 }
 
 .rodape {
-  background-color: black;
+  background-color: var(--cor-preto);
   box-sizing: border-box;
   width: 100%;
   text-align: left;
@@ -123,27 +127,24 @@ footer {
   vertical-align: top;
 }
 
-/* Footer left */
-
 .rodape .rodape-esquerda {
   width: 30%;
 }
 
 .rodape h3 {
-  color: #ffffff;
+  color: var(--cor-branco);
   font: normal 36px 'Cookie', cursive;
   margin: 0;
 }
 
 
 .rodape h3 span {
-  color: #ffffff;
+  color: var(--cor-branco);
 }
 
-/* Footer links */
 
 .rodape .rodape-links {
-  color: #ffffff;
+  color: var(--cor-branco);
   margin: 20px 0 12px;
 }
 
@@ -155,21 +156,23 @@ footer {
 }
 
 .rodape .rodape-empresa {
-  color: #8f9296;
+  color: var(--cor-rosa);
   font-size: 14px;
   font-weight: normal;
   margin: 0;
 }
 
-/* Footer Center */
+.rodape-lista-link {
+  color: var(--cor-rosa-claro);
+}
 
 .rodape .rodape-centro {
   width: 35%;
 }
 
 .rodape .rodape-centro i {
-  background-color: #33383b;
-  color: #ffffff;
+  background-color: var(--cor-cinza);
+  color: var(--cor-branco);
   font-size: 25px;
   width: 38px;
   height: 38px;
@@ -200,12 +203,10 @@ footer {
 }
 
 .rodape .rodape-centro p a {
-  color: #e0ac1c;
+  color: var(--cor-cinza);
   text-decoration: none;
   ;
 }
-
-/* Footer Right */
 
 .rodape .rodape-direita {
   width: 30%;
@@ -213,7 +214,7 @@ footer {
 
 .rodape .rodape-sobre-empresa {
   line-height: 20px;
-  color: #92999f;
+  color: var(--cor-cinza);
   font-size: 13px;
   font-weight: normal;
   margin: 0;
@@ -221,7 +222,7 @@ footer {
 
 .rodape .rodape-sobre-empresa span {
   display: block;
-  color: #ffffff;
+  color: var(--cor-branco);
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -235,10 +236,10 @@ footer {
   display: inline-block;
   width: 35px;
   height: 35px;
-  background-color: #33383b;
+  background-color: var(--cor-cinza);
   border-radius: 2px;
   font-size: 20px;
-  color: #ffffff;
+  color: var(--cor-branco);
   text-align: center;
   line-height: 35px;
   margin-right: 3px;
@@ -246,11 +247,11 @@ footer {
 }
 
 .rodape .rodape-icones a:hover {
-  background-color: #3F71EA;
+  background-color: var(--cor-rosa-claro);
 }
 
 .rodape-links a:hover {
-  color: #3F71EA;
+  color: var(--cor-branco);
 }
 
 @media (max-width: 880px) {
@@ -269,8 +270,14 @@ footer {
   margin: auto;
   display: block;
   padding: 200px;
-  background-color: #2d2a30;
+ 
   height: 150px;
   margin-bottom: 8%;
+  width: 400px;
+
+}
+.pai-video{
+  background-color: var(--cor-preto);
+  width: 100%;
 }
 

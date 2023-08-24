@@ -8,7 +8,95 @@
     <link rel="shortcut icon" href="imagens/fashion-society.png" type="image/x-icon">
     <link rel="stylesheet" href="jornal.css">
     <title>Fashion Society </title>
+    <style>
+        @media screen and (max-width: 768px) {
+  .cabecalho {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
 
+  .cabecalho-esquerda-titulo {
+    margin-left: 10px;
+    font-size: 24px;
+  }
+
+  .cabecalho-data {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .item-menu {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+
+  .banner {
+    height: 40vh;
+    margin-bottom: 3%;
+  }
+
+  .conteudo {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 3%;
+    margin-bottom: 100px;
+  }
+
+  .noticia {
+    justify-items: center;
+  }
+
+  .noticia-imagem {
+    width: 100%;
+    height: auto;
+  }
+
+  .noticia-titulo {
+    font-size: 1.2rem;
+  }
+
+  .rodape {
+    padding: 40px;
+  }
+
+  .rodape .rodape-esquerda, .rodape .rodape-centro, .rodape .rodape-direita {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .rodape .rodape-esquerda h3 {
+    font-size: 28px;
+  }
+  
+  .rodape .rodape-centro i {
+    font-size: 20px;
+    margin: 10px 5px;
+  }
+  
+  .rodape .rodape-centro p {
+    font-size: 14px;
+  }
+  
+  .rodape .rodape-sobre-empresa span {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .rodape .rodape-icones a {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    margin-right: 5px;
+  }
+}
+    </style>
 </head>
 
 <body>
@@ -31,12 +119,34 @@
 
     <main class="conteudo">
 
+        <div class="titulo">
+            <span style="--i:1">T</span>
+            <span style="--i:2">O</span>
+            <span style="--i:3">D</span>
+            <span style="--i:4">A</span>
+            <span style="--i:5">S</span>
+            <span style="--i:6">ㅤ</span>
+            <span style="--i:7">A</span>
+            <span style="--i:8">S</span>
+            <span style="--i:9">ㅤ</span>
+            <span style="--i:10">N</span>
+            <span style="--i:11">O</span>
+            <span style="--i:12">T</span>
+            <span style="--i:13">Í</span>
+            <span style="--i:14">C</span>
+            <span style="--i:15">I</span>
+            <span style="--i:16">A</span>
+            <span style="--i:17">S</span>
+
+           </div>
+         
+
         <section class="noticia">
             <a
                 href="https://forbes.com.br/forbeslife/2023/05/gisele-bundchen-e-anitta-brilham-no-red-carpet-do-met-gala-veja-looks/"><img
                     class="noticia-imagem" src="imagens/MET-Gala-Gisele.jpg" alt="Gisele Bündchen "></a>
             <a href="https://forbes.com.br/forbeslife/2023/05/gisele-bundchen-e-anitta-brilham-no-red-carpet-do-met-gala-veja-looks/"
-                class="noticia-titulo">Gisele Bündchen e Anitta brilham no red carpet do Met Gala</a>
+                class="noticia-titulo">GISELE BÜNDCHEN E ANITTA <br> BRILHAM NO RED CARPET DO <br> MET GALA</a>
         </section>
 
         <section class="noticia">
@@ -44,7 +154,7 @@
                 href="https://www.msn.com/en-us/lifestyle/lifestyle-buzz/sydney-sweeney-has-main-character-energy-at-the-2023-met-gala/ar-AA1aBIde?li=BBnbcA0"><img
                     class="noticia-imagem" src="imagens/sydney-sweeney-attends.jpg" alt="Sydney Sweeney"></a>
             <a href="https://www.msn.com/en-us/lifestyle/lifestyle-buzz/sydney-sweeney-has-main-character-energy-at-the-2023-met-gala/ar-AA1aBIde?li=BBnbcA0"
-                class="noticia-titulo">Sydney Sweeney Has Main Character Energy at the 2023 Met Gala</a>
+                class="noticia-titulo">SYDNEY SWEENEY HAS <br> MAIN CHARACTER ENERGY AT THE <br> 2023 MET GALA</a>
         </section>
 
         <section class="noticia">
@@ -52,7 +162,7 @@
                 href="https://www.correiobraziliense.com.br/revista-do-correio/2023/03/5075431-confira-as-tendencias-para-o-mundo-da-moda-em-2023.html"><img
                     class="noticia-imagem" src="imagens/tendencias.jpg" alt="Tendências"></a>
             <a href="https://www.correiobraziliense.com.br/revista-do-correio/2023/03/5075431-confira-as-tendencias-para-o-mundo-da-moda-em-2023.html"
-                class="noticia-titulo">Confira as tendências para o mundo da moda em 2023</a>
+                class="noticia-titulo">CONFIRA AS TENDÊNCIAS PARA <br> O MUNDO DA MODA EM 2023</a>
         </section>
 
         <section class="noticia">
@@ -60,7 +170,7 @@
                 href="https://vogue.globo.com/moda/noticia/2023/03/confira-as-principais-12-tendencias-de-outonoinverno-2023-segundo-as-passarelas-internacionais.ghtml"><img
                     class="noticia-imagem" src="imagens/outono.webp" alt="Tendências de inverno"></a>
             <a href="https://vogue.globo.com/moda/noticia/2023/03/confira-as-principais-12-tendencias-de-outonoinverno-2023-segundo-as-passarelas-internacionais.ghtml"
-                class="noticia-titulo">As 12 tendências de inverno 2023, segundo as passarelas internacionais</a>
+                class="noticia-titulo">AS 12 TENDÊNCIAS DE INVERNO <br> 2023, SEGUNDO AS PASSARELAS <br> INTERNACIONAIS</a>
         </section>
 
         <section class="noticia">
@@ -68,15 +178,14 @@
                 href="https://harpersbazaar.uol.com.br/moda/a-historia-da-inspiracao-por-tras-da-nova-capa-de-maisa-para-a-harpers-bazaar/#:~:text=%C3%80s%20v%C3%A9speras%20de%20completar%2021,inspirada%20em%20um%20ic%C3%B4nica%20fotografia&text=%C3%80s%20v%C3%A9speras%20de%20completar%2021%20anos%2C%20Maisa%20Silva%20estampa%20as,m%C3%AAs%20de%20maio%20de%202023."><img
                     class="noticia-imagem" src="imagens/maisa-bazaar.jpg" alt="Maisa"></a>
             <a href="https://harpersbazaar.uol.com.br/moda/a-historia-da-inspiracao-por-tras-da-nova-capa-de-maisa-para-a-harpers-bazaar/#:~:text=%C3%80s%20v%C3%A9speras%20de%20completar%2021,inspirada%20em%20um%20ic%C3%B4nica%20fotografia&text=%C3%80s%20v%C3%A9speras%20de%20completar%2021%20anos%2C%20Maisa%20Silva%20estampa%20as,m%C3%AAs%20de%20maio%20de%202023."
-                class="noticia-titulo">A história da inspiração por trás da nova capa de Maisa para a Harper’s
-                Bazaar</a>
+                class="noticia-titulo">A HISTÓRIA DA INSPIRAÇÃO <br> POR TRÁS DA NOVA CAPA DE MAISA <br> PARA A HARPER’S BAZAAR</a>
         </section>
 
         <section class="noticia">
             <a href="https://www.selecoes.com.br/beleza/conheca-as-5-maiores-tendencias-de-maquiagem-para-2023-vb/"><img
                     class="noticia-imagem" src="imagens/makes.jpg" alt="Makes"></a>
             <a href="https://www.selecoes.com.br/beleza/conheca-as-5-maiores-tendencias-de-maquiagem-para-2023-vb/"
-                class="noticia-titulo">Conheça as 5 maiores tendências de maquiagem para 2023</a>
+                class="noticia-titulo">CONHEÇA AS 5 MAIORES TENDÊNCIAS <br> DE MAQUIAGEM PARA 2023</a>
         </section>
     </main>
 
@@ -107,11 +216,11 @@
 
             <div>
                 <i class="fa-phone"></i>
-                <p>+91 74**9**258</p>
+                <p>+55 47 3674-7965</p>
             </div>
             <div>
                 <i class="fa-email"></i>
-                <p><a href="esterdossantosantunes04@gamil">xyz@gmail.com</a></p>
+                <p><a href="esterdossantosantunes04@gmail.com">esterdossantosantunes04@gmail</a></p>
             </div>
         </div>
         <div class="rodape-esquerda">

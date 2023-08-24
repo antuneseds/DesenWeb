@@ -12,6 +12,7 @@
   --cor-preto: #000000;
   --cor-branco: #FFFFFF;
   --cor-cinza: #8C8C8C;
+  --cor-pink: #A6445E;
   --fonte-bebas: 'Bebas Neue', sans-serif;
   --fonte-playfair: 'Playfair Display', serif;
   --fonte-geologica: 'Geologica', sans-serif;
@@ -51,6 +52,11 @@
   text-align: right;
 }
 
+a {
+  text-decoration: none;
+  color: var(--cor-preto);
+}
+
 .menu {
   padding: 30px;
   display: grid;
@@ -60,8 +66,8 @@
 .item-menu {
   justify-self: center;
   color: var(--cor-preto);
-  font-size: 12px;
-
+  font-size: 20px;
+  box-shadow: 0 2px 0 var(--cor-rosa);
 }
 
 .item-menu:hover {
@@ -82,7 +88,32 @@
   max-width: 90%;
   margin: auto;
   row-gap: 5%;
-  margin-bottom: 300px;
+  margin-bottom: 350px;
+}
+
+.titulo{
+  position: relative;
+  grid-column: span 2;
+  display: block;
+  margin: auto;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 2.3em  ;
+}
+
+.titulo span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: var(--cor-preto);
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
 }
 
 .noticia {
@@ -100,6 +131,10 @@
 .noticia-titulo {
   text-decoration: none;
   color: var(--cor-preto);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 5px;
 }
 
 
@@ -120,6 +155,7 @@
   font: bold 16px sans-serif;
   padding: 50px 50px 60px 50px;
   margin-top: 80px;
+  height: auto;
 }
 
 .rodape .rodape-esquerda, .rodape-centro, .rodape-direita {
@@ -190,7 +226,7 @@
 
 .rodape .rodape-centro p {
   display: inline-block;
-  color: #ffffff;
+  color: var(--cor-branco);
   vertical-align: middle;
   margin: 0;
 }
@@ -270,14 +306,26 @@
   margin: auto;
   display: block;
   padding: 200px;
- 
   height: 150px;
   margin-bottom: 8%;
   width: 400px;
 
 }
+
 .pai-video{
   background-color: var(--cor-preto);
   width: 100%;
+}
+
+#video { 
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .conteudo {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 100%;
+    padding: 0 20px;
+  }
 }
 

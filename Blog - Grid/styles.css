@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto+Flex:opsz,wght@8..144,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@500&family=Roboto+Flex:opsz,wght@8..144,500&display=swap');
+
+
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.titulo {
+    font-family: 'Pacifico', cursive;
+}
+
+.cabecalho-esquerda-imagem {
+    height: 120px;
+    display: block;
+    margin: auto;
+}
+
+.cabecalho-esquerda-titulo {
+    margin-left: 20px;
+}
+
+#b74a25;

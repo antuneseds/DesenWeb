@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.flex-item {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    min-width: 265px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}

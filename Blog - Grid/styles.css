@@ -6,15 +6,32 @@
 
 
 .header {
-    background-color: #333;
+    display: flex;
+    background-color: #b74a25;;
     color: #fff;
-    text-align: center;
     align-items: center;
+    padding: 1rem;
+    gap: 40px;
+}
+
+#img-header {
+    margin-left: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    border: 1px solid #ddd;
     padding: 1rem;
 }
 
 .footer {
-    background-color: #333;
+    background-color: #b74a25;
     color: #fff;
     text-align: center;
     padding: 1rem;
@@ -34,4 +51,16 @@
     margin-left: 20px;
 }
 
-#b74a25;
+.titulo-principal {
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.imagens {
+    width: 100%;
+    max-height: 60%;
+}
+
+
+
+
+

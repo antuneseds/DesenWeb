@@ -7,62 +7,98 @@
     <title>Formulário de Coleta de Dados</title>
 </head>
 
+<style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+    input[type=text] {
+        border: 2px solid black;
+        border-radius: 4px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none;
+    }
+
+    .titulo-principal {
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+    }
+</style>
+
 <body>
     <h1 class="titulo-principal">Formulário de Coleta de Dados</h1>
 
-    <h2 class="subtitulo">Características Pessoais:</h2>
+    <h2>Características Pessoais:</h2>
     <form>
         <fieldset>
             <legend>Dados Pessoais</legend>
-        <div>
-            <label for="pNome">Primeiro Nome</label>
-        </div>
-        <div>
-            <input type="text" id="pName" name="pNome">
-        </div>
-        <div>
-            <label for="sNome">Sobrenome:</label>
-        </div>
-        <div>
-            <input type="text" id="sNome" name="sNome">
-        </div>
-        <div>
-            <label for="idade">Idade:</label>
-        </div>
-        <div>
-            <input type="text" id="idade" name="idade">
-        </div>
-        <div>
-            <label for="mae">Nome da Mãe/Responsável:</label>
-        </div>
-        <div>
-            <input type="text" id="mae" name="mae">
-        </div>
-        <div>
-            <label for="pai">Nome do Pai/Responsável:</label>
-        </div>
-        <div>
-            <input type="text" id="pai" name="pai">
-        </div>
+            <div>
+                <label class="input" for="pNome">Primeiro Nome</label>
+            </div>
+            <div>
+                <input type="text" id="pName" name="pNome">
+            </div>
+            <div>
+                <label for="sNome">Sobrenome:</label>
+            </div>
+            <div>
+                <input type="text" id="sNome" name="sNome">
+            </div>
+            <div>
+                <label for="idade">Idade:</label>
+            </div>
+            <div>
+                <input type="text" id="idade" name="idade">
+            </div>
+            <div>
+                <label for="mae">Nome da Mãe/Responsável:</label>
+            </div>
+            <div>
+                <input type="text" id="mae" name="mae">
+            </div>
+            <div>
+                <label for="pai">Nome do Pai/Responsável:</label>
+            </div>
+            <div>
+                <input type="text" id="pai" name="pai">
+            </div>
+            <div>
+                <label for="email">Digite seu Email:</label>
+            </div>
+            <div>
+                <input type="text" id="email" name="email">
+            </div>
+            <div>
+                <label for="Remail">Informe o Email do seu Responsável:</label>
+            </div>
+            <div>
+                <input type="text" id="Remail" name="Remail">
+            </div>
 
 
-        <div>
-            <label for="">Sexo:</label>
-        </div>
+            <div>
+                <label for="">Sexo:</label>
+            </div>
 
-        <div>
-            <label for="feminino">Feminino</label>
-        </div>
-        <div>
-            <input type="radio" id="feminino" name="sexo" value="masculino">
-        </div>
-        <div>
-            <label for="masculino">Masculino</label>
-        </div>
-        <div>
-            <input type="radio" id="masculino" name="sexo" value="masculino">
-        </div>
-    </fieldset>
+            <div>
+                <label for="feminino">Feminino</label>
+                <input type="radio" id="feminino" name="sexo" value="masculino">
+            </div>
+            <div>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="masculino" name="sexo" value="masculino">
+            </div>
+        </fieldset>
 
 
         <div>
@@ -70,23 +106,17 @@
         </div>
         <div>
             <label for="alimentacao"> Alimentares</label>
-        </div>
-        <div>
             <input type="checkbox" id="alimentacao" name="alimentacao" value="Alimentares">
         </div>
         <div>
-            <label for="exercicios"> Atividades físicas ou exercícios</label><br>
-        </div>
-        <div>
+            <label for="exercicios"> Atividades físicas ou exercícios</label>
             <input type="checkbox" id="exercicios" name="exercicios" value="Exercicios">
         </div>
         <div>
             <label for="lazer"> Hábitos de Lazer</label>
-        </div>
-        <div>
             <input type="checkbox" id="lazer" name="lazer" value="Lazer">
         </div>
-
+        </div>
 
         <div>
             <label for="">Condições de Moradia:</label>
@@ -95,22 +125,20 @@
         <div>
             <label for="agua">Água</label>
             <input type="radio" id="agua" name="agua" value="Agua">
-        </div>
 
-        <div>
             <label for="luz">Luz</label>
             <input type="radio" id="luz" name="luz" value="Luz">
-        </div>
 
-        <div>
             <label for="internet">Internet</label>
             <input type="radio" id="internet" name="internet" value="Internet">
         </div>
 
+        <h2>Informe se você é um portador(a) de alguma comorbidade crônica e quais são:</h2>
+        <form>
+            <textarea>Eu sou portador(a)...</textarea>
+        </form>
 
     </form>
-
-
 
 </body>
 

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.tabela {
+    background-color:lightcoral;
+}
+
+
+.titulo {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sub {
+    background-color: aliceblue;
+}
+

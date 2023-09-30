@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+ <html lang="pt-br"> 
+  
+ <head> 
+     <meta charset="UTF-8"> 
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+     <title>IMC</title> 
+     <style> 
+         input { 
+             display: block; 
+         } 
+  
+         form { 
+             display: block; 
+             width: 10%; 
+             margin: auto; 
+         } 
+  
+         h1 { 
+             text-align: center; 
+         } 
+     </style> 
+ </head> 
+  
+ <body> 
+     <h1 id="tit"> 
+         Calculadora 
+     </h1> 
+  
+     <form> 
+         <div> 
+             <label for="txtValorA">Peso</label> 
+             <input type="number" name="" id="txtValorA"> 
+         </div> 
+         <div> 
+             <label for="txtValorB">Altura</label> 
+             <input type="number" name="" id="txtValorB"> 
+         </div> 
+         <div> 
+             <label for="txtSoma">Soma: </label> 
+             <input type="number" name="" id="txtSoma" disabled> 
+         </div> 
+         <div> 
+             <label for="mensagem">IMC</label> 
+             <input type="text" name="" id="campo" disabled> 
+         </div> 
+         <div> 
+             <input type="button" value="Calcular" onclick="click_calcular();"> 
+  
+             <input type="button" value="Limpar" onclick="click_limpar();"> 
+         </div> 
+     </form> 
+  
+ </body> 
+ <script> 
+  
+  
+     function click_calcular() { 
+         let valorA = document.getElementById("txtValorA").value; 
+         let valorB = document.getElementById("txtValorB").value; 
+         let mensagem = ""; 
+         let soma = Number(valorA) / Number(valorB ** 2); 
+         if (valorA == "") { 
+             alert("Informe o valor A"); 
+         } else if (valorB == "") { 
+             alert("Informe o valor B"); 
+         } else { 
+             document.getElementById("txtSoma").value = soma.toFixed(0); 
+         } 
+         if (soma < 18) { 
+             mensagem = 'Abaixo do peso.' 
+         } 
+         else if (soma < 25) { 
+             mensagem = 'Peso normal' 
+         } 
+         else if (soma < 30) { 
+             mensagem = 'Excesso de peso' 
+         } 
+         else if (soma < 35) { 
+             mensagem = 'Obesidade I' 
+         } 
+         else if (soma < 40) { 
+             mensagem = 'Obesidade II' 
+         } 
+         else { 
+             mensagem = 'Obesidade III' 
+         } 
+         document.getElementById("campo").value = mensagem 
+     } 
+     function click_limpar() { 
+         document.getElementById("txtValorA").value = ""; 
+         document.getElementById("txtValorB").value = ""; 
+         document.getElementById("txtSoma").value = ""; 
+     } 
+  
+  
+ </script> 
+  
+ </html>
